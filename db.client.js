@@ -1,8 +1,8 @@
 const { Sequelize } = require('sequelize')
-
+const DBURL = process.env.EXAM_DB_URL
 // database
 const sequelize = new Sequelize(
-  process.env.EXAM_DB_URL,
+  DBURL,
   {
     dialectOptions: {
       ssl: {
